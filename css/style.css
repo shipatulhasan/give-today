@@ -4,8 +4,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-/* body{
-}  */
+/*Genaral color and text */
+
+.mark{
+    background: #fd3d3d;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+/* end */
 
 .container{
     width: 1180px;
@@ -31,7 +40,7 @@
 .description{
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     padding: 20px 0;
 }
 .btn{
@@ -39,7 +48,7 @@
 }
 .btn a{
     color: #fff;
-    background: #FF5959;
+    background: #fd3d3d;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
