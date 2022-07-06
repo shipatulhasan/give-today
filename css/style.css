@@ -17,7 +17,7 @@ body{
 .description{
     color: gray;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.5em;
     font-weight: 400;
     padding: 15px 0px;
 }
@@ -146,7 +146,7 @@ section.hero,section.banner{
     color: whitesmoke;
 }
 .hero .description{
-    padding: 20px 50px;
+    padding: 20px 30px;
     color: whitesmoke;
 }
 /* Hero end */
