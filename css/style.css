@@ -4,44 +4,65 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-/*Genaral color and text */
-
-.mark{
-    background: #fd3d3d;
+/*General color and text */
+.heading{
+    font-size: 40px;
     font-weight: bold;
-    letter-spacing: 1px;
-    padding: 2px;
-    border-radius: 2px;
+    line-height: 1.3em;
+    color: #2a2a2a;
+}
+.description{
+    color: gray;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.heading-content{
+    width: 600px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+.red-bg {
+    background: #FFEEEE;
+}
+.green-bg {
+    background: rgba(79, 157, 166, 0.1);
+}
+.yellow-bg{
+    background: #fff4d6;
 }
 
-/* end */
+/* General color end */
 
+/* General properties */
 .container{
     width: 1180px;
     max-width: 100%;
-    min-height: 100vh;
     margin: 0 auto;
+    padding: 80px 0 40px;
 }
 .row{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
 
 }
 .col-1{
     flex-basis: 50%;
+    text-align: center;
 }
-.heading{
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.3;
+.col-3{
+    flex-basis: 30%;
+    
 }
-.description{
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    padding: 20px 0;
+.col-4{
+    flex-basis: 22%;
 }
 .btn{
     margin: 20px 0 0;
@@ -71,14 +92,99 @@
 	content: '';
 	opacity: 1;
 }
+/* General End */
 /* Hero section */
+
+.hero .container{
+    min-height: 100vh;
+}
+.hero .col-1{
+    flex-basis: 60%;
+    align-self: center;
+}
 .hero{
     background: no-repeat url(../images/Rectangle\ 237.png);
     background-position: center center;
     background-size: cover;
     text-align: center;
-    color: whitesmoke;
+   
 }
 .hero-content{
     z-index: 1;
 }
+.hero .heading{
+    font-size: 60px;
+    color: whitesmoke;
+}
+.hero .description{
+    padding: 20px 50px;
+    color: whitesmoke;
+}
+/* Hero end */
+
+/* Donation section*/
+.donation-box{
+    width: 800px;
+    padding: 30PX 0;
+    margin: 0 auto;
+}
+.donation-box .box{
+    background: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+.donation-box .title{
+    color: #4d4d4d;
+}
+.donation-box .red {
+    background: #FFEEEE;
+    border: 2px solid #FF5959;
+    border-radius: 5px;
+}
+.donation-box .red .title{
+    color: #FF5959!important;
+}
+
+/*Donation Form css */
+form{
+    padding: 30px 0 0;
+}
+input[type=text], select{
+    width: 100%;
+    padding: 20px;
+    border: 0px;
+    border-bottom: 2px solid #d5d5d5;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+input[type=submit] {
+    color: #fff;
+    background: #fd3d3d;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Donation section end */
+
+  /* Feature section */
+  .feature-container{
+    width: 1180px;
+    padding: 30PX 0;
+    margin: 0 auto;
+}
+.feature-box{
+    padding: 40px;
+    text-align: left;
+    border-radius: 5px;
+}
+.feature-box .title{
+    padding: 20px 0 0 ;
+}
+
