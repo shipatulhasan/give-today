@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body{
     font-family: 'Roboto', sans-serif;
 }
 /*General color and text */
@@ -27,6 +30,7 @@
     font-weight: bold;
     color: #1d1d1d;
 }
+
 .red-bg {
     background: #FFEEEE;
 }
@@ -36,15 +40,24 @@
 .yellow-bg{
     background: #fff4d6;
 }
+.tomato{
+    color:#FF5959;
+}
 
 /* General color end */
 
 /* General properties */
+section{
+    padding: 80px 0 20px;
+}
+section.hero,section.banner{
+    padding: 0;
+}
 .container{
     width: 1180px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 80px 0 20px;
+    /* padding: 80px 0 20px; */
 }
 .row{
     display: flex;
@@ -56,6 +69,14 @@
 .col-1{
     flex-basis: 50%;
     text-align: center;
+}
+.col-2{
+    flex-basis: 45%;
+    max-width: 45%;
+    align-self: center;
+}
+.col-2 img{
+    width: 100%;
 }
 .col-3{
     flex-basis: 30%;
@@ -92,6 +113,7 @@
 	content: '';
 	opacity: 1;
 }
+
 /* General End */
 /* Hero section */
 
@@ -146,10 +168,10 @@
 }
 
 /*Donation Form css */
-form{
+.donation form{
     padding: 30px 0 0;
 }
-input[type=text], select{
+input[type=number]{
     width: 100%;
     padding: 20px;
     border: 0px;
@@ -161,6 +183,7 @@ input[type=text], select{
 input[type=submit] {
     color: #fff;
     background: #fd3d3d;
+    white-space: none;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -196,3 +219,102 @@ input[type=submit] {
     text-decoration: underline #fd3d3d 1px;
 }
 
+/* Documentation */
+.documentation span{
+    color: #fd3d3d;
+    font-weight: bold;
+}
+.document {
+    width: 450px;
+}
+.documentation img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Banner */
+.banner{
+    background: no-repeat url(../images/sylhetfloodbanner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 60px 0 0;
+}
+.banner.overlay:before{
+    background: linear-gradient(90deg,rgba(0,0,0,.9) 0,rgba(0,0,0,.7) 75%);
+
+}
+.banner .container{
+    min-height: 300px;
+}
+
+.banner .col-1{
+    flex-basis: 80%;
+    align-self: center;
+    text-align: left;
+    z-index: 1;
+}
+.mark{
+    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.3;
+    display: inline;
+}
+.yellow {
+    color: #fd3d3d;
+    background: #fff;
+    font-size: 35px;
+    padding: 5px;
+    width: 40%;
+}
+.red {
+    font-size: 55px;
+    color: whitesmoke;
+    background: #fd3d3d;
+    padding: 5px;
+    width: 60%;
+}
+
+/* Newsletter */
+.subscribe-form{
+    width: 900px;
+    padding: 80px;
+    border-radius: 10px;
+    margin: 20px 0 50px;
+    
+
+}
+input[type=email] {
+    width: 60%;
+    padding: 15px 10px;
+    background: whitesmoke;
+    
+    border: 2px solid whitesmoke;
+    border-radius: 5px 0px 0 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 -4px 0 0;
+}
+input.button {
+    border-radius: 0px 5px 5px 0px;
+    border: 2px solid whitesmoke;
+}
+
+footer{
+ 
+    background: #0B0D17;
+    text-align: center;
+    padding: 50px 0;
+}
+footer .heading{
+    font-family: 'Lobster Two', cursive;
+}
+.copyright{
+    color: rgb(167, 167, 167);
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+}
