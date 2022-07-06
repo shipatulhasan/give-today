@@ -44,7 +44,7 @@
     width: 1180px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 80px 0 40px;
+    padding: 80px 0 20px;
 }
 .row{
     display: flex;
@@ -186,5 +186,13 @@ input[type=submit] {
 }
 .feature-box .title{
     padding: 20px 0 0 ;
+}
+.feature-box a{
+    background: transparent;
+    color:#fd3d3d;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-decoration: underline #fd3d3d 1px;
 }
 
