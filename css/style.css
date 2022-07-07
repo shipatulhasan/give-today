@@ -97,7 +97,7 @@ section.hero,section.banner{
 }
 .btn a{
     color: #fff;
-    background: #fd3d3d;
+    background: #ff5959;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -189,7 +189,7 @@ input[type=number]{
 }
 input[type=submit] {
     color: #fff;
-    background: #fd3d3d;
+    background: #ff5959;
     white-space: none;
     font-size: 16px;
     font-weight: bold;
@@ -211,7 +211,7 @@ input[type=submit] {
 }
 .feature-box{
     padding: 40px;
-    text-align: left;
+    text-align: justify;
     border-radius: 5px;
 }
 .feature-box .title{
@@ -219,27 +219,34 @@ input[type=submit] {
 }
 .feature-box a{
     background: transparent;
-    color:#fd3d3d;
+    color:#ff5959;
     padding: 0;
     font-size: 14px;
     line-height: 1.5em;
-    text-decoration: underline #fd3d3d 1px;
+    text-decoration: underline #ff5959 1px;
 }
 
 /* Documentation */
 .documentation span{
-    color: #fd3d3d;
+    color: #ff5959;
     font-weight: bold;
-}
-.document {
-    width: 450px;
 }
 .documentation img{
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
+.document {
+    width: 500px;
+}
+.document .paragraph{
+    text-align: justify;
+}
 /* Banner */
+.banner .row{
+    justify-content: flex-start;
+    padding: 0px 0 0 40px;
+}
 .banner{
     background: no-repeat url(../images/sylhetfloodbanner.jpg);
     background-size: cover;
@@ -270,7 +277,7 @@ input[type=submit] {
     display: inline;
 }
 .yellow {
-    color: #fd3d3d;
+    color: #ff5959;
     background: #fff;
     font-size: 35px;
     padding: 5px;
@@ -279,7 +286,7 @@ input[type=submit] {
 .red {
     font-size: 55px;
     color: whitesmoke;
-    background: #fd3d3d;
+    background: #ff5959;
     padding: 5px;
     width: 60%;
 }
@@ -300,17 +307,17 @@ input[type=submit] {
 input[type=email] {
     width: 60%;
     padding: 15px 10px;
-    background: whitesmoke;
+    background: #f3f3f3;
     
-    border: 2px solid whitesmoke;
+    border: 0;
     border-radius: 5px 0px 0 5px;
     font-size: 16px;
     letter-spacing: 1px;
-    margin: 0 -4px 0 0;
+    
 }
 input.button {
     border-radius: 0px 5px 5px 0px;
-    border: 2px solid whitesmoke;
+    margin: 0 0 0 -4px;
 }
 
 footer{
